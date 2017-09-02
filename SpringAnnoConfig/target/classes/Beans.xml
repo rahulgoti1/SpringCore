@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<context:annotation-config></context:annotation-config>
+	<bean id="student" class="com.rv.spring.lifecycle.bean.Student"
+		scope="prototype">
+		<property name="name" value="RahulGoti" />
+		<property name="age" value="22" />
+	</bean>
+	<bean id="address" class="com.rv.spring.lifecycle.bean.Address">
+		<property name="city" value="Surat"></property>
+	</bean>
+
+	<bean id="adhar" class="com.rv.spring.lifecycle.bean.Adhar">
+		<property name="adharNo" value="180012341234"></property>
+	</bean>
+	<bean id="adhar1" class="com.rv.spring.lifecycle.bean.Adhar">
+		<property name="adharNo" value="180012343214"></property>
+	</bean>
+	<bean id="bio" class="com.rv.spring.lifecycle.bean.Bio">
+		<property name="panNo" value="PANNO"></property>
+	</bean>
+</beans>
